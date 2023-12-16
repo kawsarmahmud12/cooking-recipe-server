@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/f4cT3Vf/desserts-pic.jpg",
+        "title": "DESSERTS",
+        "description": "Find Desserts or Every Taste."
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/SQq7k6g/brackfastchef.jpg",
+        "title": "BURGERS",
+        "description": "From Vegetarian to Three-Meat."
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/FX1kQRh/ica-shakes.jpg",
+        "title": "PIZZA",
+        "description": "Choose Your Favorite Pizza."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/VD6nD4h/baverage.jpg",
+        "title": "SUSHI",
+        "description": "More Than 50 Kinds of Sushi."
+    }
+]
