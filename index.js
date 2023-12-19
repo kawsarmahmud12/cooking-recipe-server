@@ -1,18 +1,31 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = process.env.PORT || 5000;
+const port = 7000;
 
 const categories = require('./data/data.json');
 const chef = require('./data/AllData.json')
 
-app.use(cors());
+const corsConfig = {
+    origin: 'https://delicate-cajeta-754e6b.netlify.app/',
+    credentials: true,
+    methods: [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS"
+    ]
+}
+app.use(cors(corsConfig))
+app.options("", cors(corsConfig))
 
 app.get('/', (req,res) => {
     res.send('food recipe server is running...')
 })
 
-app.get('/categories', (req,res) => {
+app.get('/categories', (req,res) =>{
     res.send(categories);
 })
 
